@@ -1,0 +1,53 @@
+<!-- <Form> <Select> <Option> <Text Area><Button><Input Type=�Text, Email, Password,
+   Tel pattern="[0-3]{3}", Color, Range, File, Date, Radio, Checkbox�/>
+Button Tag Attribute : Type=�Reset�, Type=�Submit�Required, Selected Attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+   
+      <form>
+        <label for="name">Name</label>
+        <input
+          id="name"
+          name="Personname"
+          type="text"
+          placeholder="Name"
+          value="Batman"
+        />
+        <br />
+        <label for=""> Password</label>
+        <input type="password" placeholder="enter password" />
+
+        <input type="submit" value="Submit" disabled /> &nbsp;
+
+        <input type="url" />
+        <input type="number" />
+        <input type="file" multiple="multiple" />
+        <input type="email" required />
+        <input type="date" />
+        <input type="color" />
+        Gender
+        <input type="radio" name="gender" />male
+        <input type="radio" name="gender" />female
+        <input type="range" />
+        <input type="tel" placeholder="1234-456-789" pattern="[1-3]{4} " />
+        <textarea name="" rows="4" id=""></textarea>
+        <select name="" id="">
+          <option value="">Yellow</option>
+          <option value="" selected>Black</option>
+        </select>
+        <input type="checkbox" checked />
+        <input type="reset">
+        <input type="search">
+      </form>
+      <legend>Form</legend>
+    </fieldset>
+  </body>
+</html>
