@@ -1,0 +1,68 @@
+<!-- Box Modal Width, Height, Background-Color Content, Padding, Border,
+ Margin Box-Sizing Border-Radius Display Property  Block, Inline, Inline-Block, None -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box2 {
+        margin-top: 100px;
+      }
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        /* padding-left: 25px;
+        padding-top:25px ;
+        padding-right: 25px ;
+        padding-bottom:25px ; */
+        /* padding:25px */
+        /* padding: 20px 50px ; */
+        /* padding: 25px 50px 75px 100px; */
+
+        /* border-color: red;
+        border-style: solid;
+        border-width: 25px; */
+        /* border: 20px dotted grey; */
+        padding: 55px;
+        margin: 50px;
+        /* box-sizing: content-box ; */
+        box-sizing: border-box;
+        /* border-radius: 10%; */
+        /* border-top-left-radius: 25px;
+        border-bottom-right-radius: 500px; */
+        /* border-radius: 42% 58% 18% 82% / 57% 100% 0% 43%; */
+        border: 20px;
+        border-radius: 50px 12px 5px 20%/57% 0% 0%;
+      }
+      .span-tag {
+        /* display: block; */
+        /* display: none; */
+        visibility: hidden;
+        background-color: yellow;
+     
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">Box1</div>
+    <div>asdf</div>
+
+    <p>
+      Lorem ipsum, dolor sit amet<span class="span-tag">Span tag</span>
+      consectetur adipisicing elit. Optio in, obcaecati aperiam iste recusandae
+      natus, eveniet harum accusamus iusto voluptate corporis eius consectetur
+      eaque aliquam delectus. Rem eligendi animi laborum!
+    </p>
+    <div class="box2"></div>
+  </body>
+</html>
