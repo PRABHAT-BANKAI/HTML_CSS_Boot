@@ -1,0 +1,115 @@
+<!-- Float Property Float (Left,Right), Clear:Both,
+  Calc()Image Attach In Html(Object-Fit, Object Position)
+  
+  example chess -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+        float: left;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(46, 226, 43);
+        float: left;
+      }
+      .clear-both {
+        clear: both;
+      }
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(226, 43, 165);
+      }
+      .black-box {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        float: left;
+        color: white;
+      }
+      .white-box {
+        height: 100px;
+        width: 100px;
+        background-color: #e6e208;
+        float: left;
+        color: white;
+        font-size: 45px;
+        padding: 20px 0px;
+        text-align: center;
+      }
+      .container {
+        width: calc(100% - 250px);
+        height: 400px;
+        background-color: aqua;
+      }
+      .image-cont {
+        height: 800px;
+        width: 800px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officia
+      optio corporis nam et quasi architecto impedit deserunt, fugiat quaerat
+      vitae. Est alias quasi ut sequi sint? Placeat, labore perspiciatis!
+    </p>
+    <div class="box3 clear-both"></div>
+
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box">♔</div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="clear-both"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="clear-both"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+    <div class="black-box"></div>
+    <div class="white-box"></div>
+
+    <div class="container"></div>
+
+    <div class="image-cont">
+      <img src="./image.jpeg" alt="" />
+    </div>
+  </body>
+</html>
