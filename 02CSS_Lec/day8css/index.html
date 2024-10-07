@@ -1,0 +1,140 @@
+<!-- Selector
+div,P, Div P, Div > P:First Letter,
+:First Line, :First Child, :LastChild,
+ :Nth Child(), :Nth Last Child(), ::Selection -->
+<!-- //psuedo element or psuedo class -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* height: 100px;
+        width: 100px;
+        background-color: yellow !important; */
+      }
+      /* p {
+        background-color: greenyellow;
+      } */
+      /* .main-container  p {
+        background-color: aqua;
+      } */
+      /* .main-container > p {
+        background-color: aqua;
+      } */
+
+      /* pseudo class */
+      /* p:hover {
+        background-color: crimson;
+      } */
+      /* pseudo element */
+      /* p::first-letter {
+        background-color: darkblue;
+      }
+      p::first-line {
+        background-color: yellow;
+      } */
+      p:first-child {
+        background-color: rgb(78, 181, 81);
+      }
+      p:last-child {
+        color: red;
+      }
+      p:nth-child(3) {
+        color: blueviolet;
+      }
+      p:nth-last-child(3) {
+        background-color: darkblue;
+      }
+      p::selection {
+        background-color: deeppink;
+      }
+      p::after {
+        content: "hello world";
+      }
+      p::before {
+        content: "hello world";
+      }
+      .box-cont > div {
+        background-color: rgb(168, 196, 124);
+      }
+    </style>
+  </head>
+  <body style="position: relative;">
+    <div class="box1">
+      <p>
+        first child Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+        veritatis maiores est odio esse fugit perspiciatis voluptatum,
+        aspernatur reprehenderit eius animi ab quas, dolor asperiores ipsa. Vero
+        porro dicta corrupti!
+      </p>
+      <p>
+        Last Child Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi dolorum accusantium, voluptatum at nemo porro quia quasi officia
+        iusto tempora. Accusantium sed alias nam fuga neque eius nulla eos
+        labore?
+      </p>
+    </div>
+    <div class="main-container">
+      <p>
+        first child Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Esse consectetur, deserunt ut officiis excepturi illum veritatis sed
+        autem ullam maiores aut repellat debitis labore repellendus veniam.
+        Minus quisquam molestias hic!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+        consectetur, deserunt ut officiis excepturi illum veritatis sed autem
+        ullam maiores aut repellat debitis labore repellendus veniam. Minus
+        quisquam molestias hic!
+      </p>
+      <p>
+        nthlast child Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Esse consectetur, deserunt ut officiis excepturi illum veritatis sed
+        autem ullam maiores aut repellat debitis labore repellendus veniam.
+        Minus quisquam molestias hic!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+        consectetur, deserunt ut officiis excepturi illum veritatis sed autem
+        ullam maiores aut repellat debitis labore repellendus veniam. Minus
+        quisquam molestias hic!
+      </p>
+      <div>
+        <div>
+          <p>
+            first child Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sint, odio quasi eos impedit repudiandae voluptatibus eaque
+            reiciendis in corporis, tempore rerum est ratione expedita
+            accusantium doloremque maxime consectetur labore magnam.
+          </p>
+          <p>
+            second child Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sint, odio quasi eos impedit repudiandae voluptatibus eaque
+            reiciendis in corporis, tempore rerum est ratione expedita
+            accusantium doloremque maxime consectetur labore magnam.
+          </p>
+        </div>
+        <p>
+          last Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          earum reiciendis magni illum. Veniam repellat voluptatibus illo non
+          iure harum, dolores culpa sunt quidem praesentium amet eius magni
+          nobis necessitatibus.
+        </p>
+      </div>
+    </div>
+
+    <div class="box-cont">
+      <div>
+        <p>inside div 1</p>
+      </div>
+      <div>
+        <p>inside div 2</p>
+      </div>
+      <p >container child 3</p>
+      <p style="position: absolute; top: 0;" >container child 4</p>
+    </div>
+  </body>
+</html>
