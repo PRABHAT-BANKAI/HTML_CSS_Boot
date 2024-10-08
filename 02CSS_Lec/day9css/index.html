@@ -1,0 +1,102 @@
+<!-- Position  static, Absolute, Relative, Fixed, Sticky,
+  Z Index,
+   Overflow -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+      body {
+        position: relative;
+      }
+      .main-container {
+        background-color: black;
+        height: 1200px;
+        width: 500px;
+        position: relative;
+      }
+      .box1 {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        position: absolute;
+        /* bottom: 0;
+        right: 0; */
+      }
+      .box2 {
+        height: 150px;
+        width: 300px;
+        background-color: blue;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+      }
+      .sticky {
+        height: 100px;
+        width: 100%;
+        background-color: yellow;
+        top: 20%;
+        position: sticky;
+      }
+      /* .box-inner {
+        position: relative;
+      } */
+      .b10 {
+        height: 500px;
+        width: 500px;
+        background-color: yellow;
+        position: absolute;
+        z-index: 8;
+        top: 30%;
+      }
+      .b11 {
+        height: 400px;
+        width: 400px;
+        background-color: rgb(0, 255, 166);
+        position: absolute;
+        z-index: 6;
+        left: 30%;
+      }
+      .b12 {
+        height: 300px;
+        width: 900px;
+        background-color: rgb(255, 0, 217);
+        /* bottom: 0; */
+        z-index: 7;
+        position: absolute;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Position</h1>
+
+    <div class="main-container">
+      <div class="box1"></div>
+      <p style="color: white">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt,
+        ratione! In, vitae deleniti repudiandae quo saepe explicabo libero ab
+        est quia itaque ad voluptates quos sapiente corrupti recusandae, beatae
+        officia.
+      </p>
+      <div class="box2">Fixed</div>
+    </div>
+
+    <div style="height: 800px; width: 100%; background-color: blueviolet">
+      <div class="sticky">sticky</div>
+    </div>
+    <div class="main-container"></div> -->
+
+    <div class="b10"></div>
+    <div class="b11"></div>
+    <div class="b12"></div>
+  </body>
+</html>
